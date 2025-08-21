@@ -1,0 +1,362 @@
+/* ABSTRACTS */
+/* BREAKPOINTS */
+/* TEXT STROKE */
+/* COLORS */
+/* VENDORS */
+/* BASE */
+.bg__glass {
+  background: rgba(20, 20, 20, 0.4) !important;
+  -webkit-backdrop-filter: blur(7px) !important;
+          backdrop-filter: blur(7px) !important;
+}
+
+.bg__light-glass {
+  background: rgba(240, 240, 240, 0.75) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+          backdrop-filter: blur(8px) !important;
+}
+
+.bg__dark-glass {
+  background: rgba(50, 50, 50, 0.75) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+          backdrop-filter: blur(8px) !important;
+}
+
+.bg__light {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.bg__green {
+  background: #327261;
+}
+
+.bg__cooper {
+  background: #c66633;
+}
+
+.bg__darkblue {
+  background: #1d2226;
+}
+
+.bg__white {
+  background: #f3f4f6;
+}
+
+.bg__white {
+  background: #f3f4f6;
+}
+
+html, body {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #f3f4f6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-variable.ttf") format("truetype");
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../fonts/inter-variable.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter-ExtraBold";
+  src: url("../fonts/inter-variable.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-variable.ttf") format("truetype");
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/roboto-variable.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-ExtraBold";
+  src: url("../fonts/roboto-variable.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+.text-title {
+  font-family: "Inter-Bold", sans-serif;
+  font-weight: regular;
+  letter-spacing: 1px;
+  font-size: 36px;
+  line-height: 44px;
+}
+@media (min-width: 1024px) {
+  .text-title {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 1280px) {
+  .text-title {
+    font-size: 53px;
+    line-height: 64px;
+  }
+}
+
+.text-headline {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: regular;
+  line-height: 31px;
+  letter-spacing: 0;
+}
+@media (min-width: 1024px) {
+  .text-headline {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1280px) {
+  .text-headline {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.text-xsm {
+  font-size: 9px;
+}
+
+.text-green {
+  color: #327261;
+}
+
+.text-darkBlue {
+  color: #1d2226;
+}
+
+/* LAYOUT */
+/* COMPONENTS */
+.button-primary {
+  background: #327261;
+  color: #f3f4f6;
+  font-weight: bold;
+}
+
+.button-primary:hover {
+  background: #1d2226;
+}
+
+.button-primary:focus {
+  background: #000;
+}
+
+.button-primary-cooper {
+  background: #c66633;
+  color: #f3f4f6;
+  font-weight: bold;
+}
+
+.button-primary-cooper:hover {
+  background: #1d2226;
+}
+
+.button-primary-cooper:focus {
+  background: #000;
+}
+
+.button-secondary {
+  background: #f3f4f6;
+  color: #327261;
+  font-weight: bold;
+  outline: 2px solid #327261;
+}
+
+.button-secondary:hover {
+  color: #1d2226;
+  outline: 2px solid #1d2226;
+}
+
+.button-secondary:focus {
+  outline: 2px solid #1d2226;
+}
+
+.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button .indicator-1 {
+  background: url("../img/index/carousel1/cat1-off.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button .indicator-2 {
+  background: url("../img/index/carousel1/cat2-off.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button .indicator-3 {
+  background: url("../img/index/carousel1/cat3-off.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button p {
+  color: #a1a1a1;
+}
+.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button.true .indicator-1 {
+  background: url("../img/index/carousel1/cat1-on.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button.true .indicator-2 {
+  background: url("../img/index/carousel1/cat2-on.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button.true .indicator-3 {
+  background: url("../img/index/carousel1/cat3-on.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button.true p {
+  color: #1d2226;
+  font-weight: bold;
+}
+.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button .indicator-1 {
+  background: url("../img/index/carousel2/cat1-off.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button .indicator-2 {
+  background: url("../img/index/carousel2/cat2-off.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button .indicator-3 {
+  background: url("../img/index/carousel2/cat3-off.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button p {
+  color: #a1a1a1;
+}
+.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button.true .indicator-1 {
+  background: url("../img/index/carousel2/cat1-on.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button.true .indicator-2 {
+  background: url("../img/index/carousel2/cat2-on.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button.true .indicator-3 {
+  background: url("../img/index/carousel2/cat3-on.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button.true p {
+  color: #1d2226;
+  font-weight: bold;
+}
+
+/* PAGES */
+.body__index .index__main .main__carousel1 {
+  background: url("../img/index/carousel1/background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 640px) {
+  .body__index .index__main .main__carousel1 {
+    background: url("../img/index/carousel1/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.body__index .index__main .main__carousel2 {
+  background: url("../img/index/carousel2/background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 640px) {
+  .body__index .index__main .main__carousel2 {
+    background: url("../img/index/carousel2/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.body__index .index__main .main__wwa {
+  background: url("../img/index/wwa/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.body__index .index__main .main__wwa .wwa__content .content {
+  background: url("../img/index/wwa/background-content.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.body__index .index__main .main__our-course {
+  background: url("../img/index/our-course/background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 640px) {
+  .body__index .index__main .main__our-course {
+    background: url("../img/index/our-course/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.body__index .index__footer {
+  background: url("../img/index/footer/background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100dvh 100%;
+  background-position: center;
+}
+@media (min-width: 640px) {
+  .body__index .index__footer {
+    background: url("../img/index/footer/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100dvw 100%;
+    background-position: center;
+  }
+}
+
+/* THEMES *//*# sourceMappingURL=main.css.map */

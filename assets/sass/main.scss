@@ -1,0 +1,29 @@
+// main.scss # Manifest File
+
+/* ABSTRACTS */
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+/* VENDORS */
+
+/* BASE */
+@import 'base/background';
+@import 'base/base';
+@import 'base/typography';
+
+/* LAYOUT */
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/navigation';
+
+/* COMPONENTS */
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/carousels';
+@import 'components/modals';
+@import 'components/tables';
+
+/* PAGES */
+@import 'pages/index';
+
+/* THEMES */

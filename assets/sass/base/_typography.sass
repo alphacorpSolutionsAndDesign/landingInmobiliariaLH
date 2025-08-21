@@ -1,0 +1,76 @@
+*
+    font-family: 'Inter', sans-serif
+    
+@font-face 
+    font-family: 'Inter'
+    src: url('../fonts/inter-variable.ttf') format('truetype')
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: 'Inter-Bold'
+    src: url('../fonts/inter-variable.ttf') format('truetype')
+    font-weight: 700
+    font-style: normal
+
+@font-face 
+    font-family: 'Inter-ExtraBold'
+    src: url('../fonts/inter-variable.ttf') format('truetype')
+    font-weight: 900
+    font-style: normal
+
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/roboto-variable.ttf') format('truetype')
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: 'Roboto-Bold'
+    src: url('../fonts/roboto-variable.ttf') format('truetype')
+    font-weight: 700
+    font-style: normal
+
+@font-face 
+    font-family: 'Roboto-ExtraBold'
+    src: url('../fonts/roboto-variable.ttf') format('truetype')
+    font-weight: 900
+    font-style: normal
+
+.text-title
+    font-family: 'Inter-Bold', sans-serif
+    font-weight: regular
+    letter-spacing: 1px
+    font-size: 36px
+    line-height: 44px
+
+    @include media-breakpoint('lg')
+        font-size: 40px
+        letter-spacing: 2px
+
+    @include media-breakpoint('xl')
+        font-size: 53px
+        line-height: 64px
+
+.text-headline
+    font-family: 'Roboto', sans-serif
+    font-size: 24px
+    font-weight: regular
+    line-height: 31px
+    letter-spacing: 0
+
+    @include media-breakpoint('lg')
+        font-size: 25px
+
+    @include media-breakpoint('xl')
+        font-size: 32px
+        line-height: 40px
+
+.text-xsm
+    font-size: 9px
+
+.text-green
+    color: $color-green
+
+.text-darkBlue
+    color: $color-darkBlue

@@ -1,0 +1,15 @@
+/* BREAKPOINTS */
+@mixin media-breakpoint ($breakpoint)
+  $raw-query: map-get($breakpoints, $breakpoint)
+
+  @if $raw-query
+    $query: if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query))
+
+    @media #{$query}
+      @content
+
+$breakpoints: ('sm': (min-width: 640px), 'md': (min-width: 768px), 'lg': (min-width: 1024px), 'xl': (min-width: 1280px), '2xl': (min-width: 1536px), '3xl': (min-width: 1792px))
+
+/* TEXT STROKE */
+// @mixin text-border($color, $size: 1px)
+//   text-shadow: -#{$size} -#{$size} 0 $color, #{$size} -#{$size} 0 $color, -#{$size} #{$size} 0 $color, #{$size} #{$size} 0 $color
