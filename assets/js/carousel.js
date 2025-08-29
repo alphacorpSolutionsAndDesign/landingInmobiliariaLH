@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const carousels = document.querySelectorAll(".carousel");
     
     carousels.forEach(carousel => {
+        const speed = parseInt(carousel.getAttribute("data-speed"));
         const slides = carousel.querySelector("#carouselSlides");
         const indicators = carousel.querySelectorAll("#carouselIndicators button");
         const prevButton = carousel.querySelector("#prev");
@@ -12,32 +13,40 @@ document.addEventListener('DOMContentLoaded', () => {
         let currentIndex = 0;
         let startX = 0;
         let endX = 0;
+        let autoplayTimer;
+
+        const resetAutoplay = () => {
+            if (speed > 0) {
+                clearTimeout(autoplayTimer);
+                autoplayTimer = setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % totalSlides;
+                    updateCarousel(currentIndex, slides, indicators);
+                    resetAutoplay();
+                }, speed);
+            };
+        };
+
+        const goToSlide = (index) => {
+            currentIndex = index;
+            updateCarousel(currentIndex, slides, indicators);
+            resetAutoplay();
+        };
 
         // Buttons
         prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            updateCarousel(currentIndex, slides, indicators);
+            goToSlide((currentIndex -1 + totalSlides) % totalSlides);
         });
 
         nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateCarousel(currentIndex, slides, indicators);
+            goToSlide((currentIndex + 1) % totalSlides);
         });
 
         // Indicators
         indicators.forEach(btn => {
             btn.addEventListener('click', () => {
-                currentIndex = parseInt(btn.getAttribute("data-slide"));
-                updateCarousel(currentIndex, slides, indicators);
+                goToSlide(parseInt(btn.getAttribute("data-slide")));
             });
         });
-
-        // Autoplay
-        setInterval(() => {
-            let index = -1
-            index = (currentIndex += 1) % totalSlides;
-            updateCarousel(index, slides, indicators);
-        }, 8000);
 
         // Mobile Swipe
         slides.addEventListener('touchstart', (e) => {
@@ -54,13 +63,16 @@ document.addEventListener('DOMContentLoaded', () => {
             if (Math.abs(diff) > 50) {
                 if (diff > 0) {
                     // Swipe Left to Right
-                    currentIndex = (currentIndex + 1) % totalSlides; 
+                    goToSlide((currentIndex + 1) % totalSlides);
                 } else {
                     // Swipe Right to Left
-                    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                    goToSlide((currentIndex - 1 + totalSlides) % totalSlides);
                 };
                 updateCarousel(currentIndex, slides, indicators);
             }
         };
+
+        // Autoplay
+        resetAutoplay();
     });
 });

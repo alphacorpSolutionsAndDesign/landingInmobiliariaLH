@@ -67,10 +67,19 @@
         line-height: 40px
 
 .text-xsm
-    font-size: 9px
+    font-size: 12px
+
+.text-light
+    color: $color-white
 
 .text-green
     color: $color-green
 
 .text-darkBlue
     color: $color-darkBlue
+
+.text_light-dark
+    color: $color-white
+
+    @include media-breakpoint('lg')
+        color: $color-darkBlue

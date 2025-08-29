@@ -48,8 +48,7 @@
 
 html, body {
   width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
   background: #f3f4f6;
 }
 
@@ -59,6 +58,11 @@ html {
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+body.noscroll {
+  overflow: hidden;
+  touch-action: none;
 }
 
 a {
@@ -145,7 +149,11 @@ a {
 }
 
 .text-xsm {
-  font-size: 9px;
+  font-size: 12px;
+}
+
+.text-light {
+  color: #f3f4f6;
 }
 
 .text-green {
@@ -154,6 +162,15 @@ a {
 
 .text-darkBlue {
   color: #1d2226;
+}
+
+.text_light-dark {
+  color: #f3f4f6;
+}
+@media (min-width: 1024px) {
+  .text_light-dark {
+    color: #1d2226;
+  }
 }
 
 /* LAYOUT */
@@ -202,156 +219,267 @@ a {
   outline: 2px solid #1d2226;
 }
 
-.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button .indicator-1 {
+.carousel1 .carousel1__content .content__bottom .carousel .carousel-indicators button .indicator-1 {
   background: url("../img/index/carousel1/cat1-off.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button .indicator-2 {
+.carousel1 .carousel1__content .content__bottom .carousel .carousel-indicators button .indicator-2 {
   background: url("../img/index/carousel1/cat2-off.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button .indicator-3 {
+.carousel1 .carousel1__content .content__bottom .carousel .carousel-indicators button .indicator-3 {
   background: url("../img/index/carousel1/cat3-off.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button p {
+.carousel1 .carousel1__content .content__bottom .carousel .carousel-indicators button p {
   color: #a1a1a1;
 }
-.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button.true .indicator-1 {
+.carousel1 .carousel1__content .content__bottom .carousel .carousel-indicators button.true .indicator-1 {
   background: url("../img/index/carousel1/cat1-on.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button.true .indicator-2 {
+.carousel1 .carousel1__content .content__bottom .carousel .carousel-indicators button.true .indicator-2 {
   background: url("../img/index/carousel1/cat2-on.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button.true .indicator-3 {
+.carousel1 .carousel1__content .content__bottom .carousel .carousel-indicators button.true .indicator-3 {
   background: url("../img/index/carousel1/cat3-on.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.body__index .index__main .main__carousel1 .carousel1__content .content__bottom .carousel-desktop .carousel-indicators button.true p {
+.carousel1 .carousel1__content .content__bottom .carousel .carousel-indicators button.true p {
   color: #1d2226;
   font-weight: bold;
 }
-.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button .indicator-1 {
+
+.carousel2 .carousel2__content .content__bottom .carousel .carousel-indicators button .indicator-1 {
   background: url("../img/index/carousel2/cat1-off.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button .indicator-2 {
+.carousel2 .carousel2__content .content__bottom .carousel .carousel-indicators button .indicator-2 {
   background: url("../img/index/carousel2/cat2-off.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button .indicator-3 {
+.carousel2 .carousel2__content .content__bottom .carousel .carousel-indicators button .indicator-3 {
   background: url("../img/index/carousel2/cat3-off.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button p {
+.carousel2 .carousel2__content .content__bottom .carousel .carousel-indicators button p {
   color: #a1a1a1;
 }
-.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button.true .indicator-1 {
+.carousel2 .carousel2__content .content__bottom .carousel .carousel-indicators button.true .indicator-1 {
   background: url("../img/index/carousel2/cat1-on.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button.true .indicator-2 {
+.carousel2 .carousel2__content .content__bottom .carousel .carousel-indicators button.true .indicator-2 {
   background: url("../img/index/carousel2/cat2-on.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button.true .indicator-3 {
+.carousel2 .carousel2__content .content__bottom .carousel .carousel-indicators button.true .indicator-3 {
   background: url("../img/index/carousel2/cat3-on.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.body__index .index__main .main__carousel2 .carousel2__content .content__bottom .carousel-desktop .carousel-indicators button.true p {
+.carousel2 .carousel2__content .content__bottom .carousel .carousel-indicators button.true p {
+  color: #1d2226;
+  font-weight: bold;
+}
+
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button .indicator-1 {
+  background: url("../img/index/dream-house/cat1-off.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button .indicator-2 {
+  background: url("../img/index/dream-house/cat2-off.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button .indicator-3 {
+  background: url("../img/index/dream-house/cat3-off.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button .indicator-4 {
+  background: url("../img/index/dream-house/cat4-off.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button .indicator-5 {
+  background: url("../img/index/dream-house/cat5-off.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button .indicator-6 {
+  background: url("../img/index/dream-house/cat6-off.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button p {
+  color: #616161;
+}
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button.true .indicator-1 {
+  background: url("../img/index/dream-house/cat1-on.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button.true .indicator-2 {
+  background: url("../img/index/dream-house/cat2-on.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button.true .indicator-3 {
+  background: url("../img/index/dream-house/cat3-on.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button.true .indicator-4 {
+  background: url("../img/index/dream-house/cat4-on.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button.true .indicator-5 {
+  background: url("../img/index/dream-house/cat5-on.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button.true .indicator-6 {
+  background: url("../img/index/dream-house/cat6-on.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dream-house .dream-house__content .content__middle .carousel .carousel-indicators button.true p {
   color: #1d2226;
   font-weight: bold;
 }
 
 /* PAGES */
-.body__index .index__main .main__carousel1 {
+.carousel1 {
   background: url("../img/index/carousel1/background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 @media (min-width: 640px) {
-  .body__index .index__main .main__carousel1 {
+  .carousel1 {
     background: url("../img/index/carousel1/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 }
-.body__index .index__main .main__carousel2 {
+
+.carousel2 {
   background: url("../img/index/carousel2/background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 @media (min-width: 640px) {
-  .body__index .index__main .main__carousel2 {
+  .carousel2 {
     background: url("../img/index/carousel2/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 }
-.body__index .index__main .main__wwa {
-  background: url("../img/index/wwa/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.body__index .index__main .main__wwa .wwa__content .content {
-  background: url("../img/index/wwa/background-content.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.body__index .index__main .main__our-course {
-  background: url("../img/index/our-course/background-mobile.jpg");
+
+.modal .modal-content {
+  background: url("../img/index/modals/background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 @media (min-width: 640px) {
-  .body__index .index__main .main__our-course {
-    background: url("../img/index/our-course/background.jpg");
+  .modal .modal-content {
+    background: url("../img/index/modals/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 }
-.body__index .index__footer {
+
+.wwa {
+  background: url("../img/index/wwa/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wwa .wwa__content .content {
+  background: url("../img/index/wwa/background-content.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.dream-house {
+  background: url("../img/index/dream-house/background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 640px) {
+  .dream-house {
+    background: url("../img/index/dream-house/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.footer .footer__content .content__top {
+  background: url("../img/index/footer/top-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100dvh 100%;
+  background-position: center;
+}
+@media (min-width: 640px) {
+  .footer .footer__content .content__top {
+    background: none;
+  }
+}
+.footer .footer__content .content__bottom {
   background: url("../img/index/footer/background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100dvh 100%;
   background-position: center;
 }
 @media (min-width: 640px) {
-  .body__index .index__footer {
+  .footer .footer__content .content__bottom {
     background: url("../img/index/footer/background.jpg");
     background-repeat: no-repeat;
     background-size: 100dvw 100%;
