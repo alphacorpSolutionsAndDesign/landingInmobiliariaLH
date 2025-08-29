@@ -165,7 +165,7 @@ a {
 }
 
 .text_light-dark {
-  color: #f3f4f6;
+  color: #424242;
 }
 @media (min-width: 1024px) {
   .text_light-dark {
@@ -344,7 +344,7 @@ a {
   background-position: center;
 }
 .dream-house .dream-house__content .content__middle .carousel .carousel-indicators button p {
-  color: #616161;
+  color: #424242;
 }
 .dream-house .dream-house__content .content__middle .carousel .carousel-indicators button.true .indicator-1 {
   background: url("../img/index/dream-house/cat1-on.png");
@@ -464,7 +464,7 @@ a {
 .footer .footer__content .content__top {
   background: url("../img/index/footer/top-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 100dvh 100%;
+  background-size: cover;
   background-position: center;
 }
 @media (min-width: 640px) {
